@@ -216,16 +216,7 @@
         });
       });
 
-      // Auto height des textarea
-      this.FORM.querySelectorAll("textarea").forEach((textarea) => {
-        function autoTextareaHeight(e) {
-          const el = e.target;
-          el.style.height = el.scrollHeight + "px";
-        }
 
-        textarea.addEventListener("focus", autoTextareaHeight);
-        textarea.addEventListener("input", autoTextareaHeight);
-      });
 
       // EDITION
       if (this.EDITOR_VALUE) {
