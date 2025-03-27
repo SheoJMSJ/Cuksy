@@ -415,18 +415,6 @@
         this.fillForm(newFieldInputs, data);
       }
       deleteButton.addEventListener("click", this.deleteField.bind(this));
-      // Auto height des textarea
-      fieldContainer.querySelectorAll("textarea").forEach((textarea) => {
-        function autoTextareaHeight(e) {
-          const el = e.target;
-          el.style.height = el.scrollHeight + "px";
-        }
-        textarea.addEventListener("focus", autoTextareaHeight);
-        textarea.addEventListener("input", autoTextareaHeight);
-      });
-      newFieldInputs.forEach((input) => {
-        input.addEventListener("input", this.generateData.bind(this));
-      });
 
       // Ajoute l'input au DOM
       this.FORM.querySelector(`[data-container-name="${target}"]`).append(fieldContainer);
