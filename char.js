@@ -12,7 +12,7 @@
   "use strict";
 
   const defaults = {
-    category: [0],
+    category: [6],
     name: "fiche",
     personaPageTitle: function (action) {
       return action + " sa fiche de présentation";
